@@ -20,8 +20,7 @@ buttons.forEach(b => b.addEventListener('click', e => {
 }));
 
 overlay.addEventListener('click', e => {
-  const target = e.target.closest('.popup'); /// Ищет поиск в верх по классам
-
+  const target = e.target.closest('.popup');
   if (target) return;
 
   overlay.classList.remove('popup-bg--active');
